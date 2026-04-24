@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kauan Lucas — Desenvolvedor Front-end especializado em criar experiências digitais modernas e performáticas." />
+  <meta name="keywords" content="desenvolvedor front-end, HTML, CSS, JavaScript, portfólio, web developer" />
+  <meta name="author" content="Kauan Lucas" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kauan Lucas | Desenvolvedor Front-end" />
+  <meta property="og:description" content="Criando experiências digitais que convertem. Portfólio de desenvolvimento front-end." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kauanlucas.dev" />
+
+  <title>Kauan Lucas | Desenvolvedor Front-end</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER / NAVEGAÇÃO
+       Fica fixo no topo. Muda de visual ao rolar.
+  ========================================== -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a href="#home" class="nav__logo" aria-label="Ir para o início">
+        KL<span class="nav__logo-dot">.</span>
+      </a>
+
+      <ul class="nav__menu" id="navMenu" role="list">
+        <li><a href="#sobre" class="nav__link">Sobre</a></li>
+        <li><a href="#habilidades" class="nav__link">Habilidades</a></li>
+        <li><a href="#projetos" class="nav__link">Projetos</a></li>
+        <li><a href="#contato" class="nav__link">Contato</a></li>
+      </ul>
+
+      <!-- Botão menu mobile -->
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="nav__toggle-line"></span>
+        <span class="nav__toggle-line"></span>
+        <span class="nav__toggle-line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ==========================================
+         HERO SECTION
+         Primeira impressão. Deve parar o scroll.
+    ========================================== -->
+    <section class="hero" id="home" aria-label="Apresentação">
+      <!-- Fundo com efeito de grade animada -->
+      <div class="hero__grid" aria-hidden="true"></div>
+      <!-- Orbs de luz decorativos -->
+      <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+
+      <div class="container hero__content">
+        <div class="hero__badge fade-up">
+          <span class="hero__badge-dot"></span>
+          Disponível para oportunidades
+        </div>
+
+        <h1 class="hero__name fade-up">
+          Kauan<br />
+          <span class="hero__name-accent">Lucas</span>
+        </h1>
+
+        <p class="hero__title fade-up">
+          <span class="hero__title-line">Desenvolvedor</span>
+          <span class="hero__title-highlight">Front-end</span>
+        </p>
+
+        <p class="hero__tagline fade-up">
+          Transformo ideias em interfaces que as pessoas amam usar.<br class="hide-mobile" />
+          Código limpo, design preciso, resultado real.
+        </p>
+
+        <div class="hero__actions fade-up">
+          <a href="#projetos" class="btn btn--primary">
+            Ver projetos
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="#contato" class="btn btn--ghost">Entrar em contato</a>
+        </div>
+
+        <!-- Contador de stats abaixo do CTA -->
+        <div class="hero__stats fade-up">
+          <div class="hero__stat">
+            <span class="hero__stat-number">10+</span>
+            <span class="hero__stat-label">Projetos criados</span>
+          </div>
+          <div class="hero__stat-divider" aria-hidden="true"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-number">6</span>
+            <span class="hero__stat-label">Meses de foco total</span>
+          </div>
+          <div class="hero__stat-divider" aria-hidden="true"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-number">100%</span>
+            <span class="hero__stat-label">Dedicação</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SOBRE MIM
+         Tom profissional, humano, não genérico.
+    ========================================== -->
+    <section class="sobre" id="sobre" aria-label="Sobre mim">
+      <div class="container">
+        <div class="sobre__grid">
+
+          <!-- Visual / card da esquerda -->
+          <div class="sobre__visual fade-left">
+            <div class="sobre__card">
+              <div class="sobre__avatar" aria-hidden="true">
+                <!-- Iniciais como avatar estilizado -->
+                <span class="sobre__avatar-text">KL</span>
+                <div class="sobre__avatar-ring"></div>
+              </div>
+              <div class="sobre__info-tags">
+                <span class="tag">Limeira, SP</span>
+                <span class="tag">TI Formation</span>
+                <span class="tag tag--green">Aberto para trabalhar</span>
+              </div>
+            </div>
+
+            <!-- Card de tech stack flutuante -->
+            <div class="sobre__floating-card" aria-hidden="true">
+              <p class="sobre__floating-label">Stack atual</p>
+              <div class="sobre__tech-list">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Git</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Texto da direita -->
+          <div class="sobre__text fade-right">
+            <p class="section-eyebrow">Quem sou eu</p>
+            <h2 class="section-title">
+              Formado em TI.<br />Focado em front-end.
+            </h2>
+
+            <div class="sobre__paragraphs">
+              <p>
+                Tenho formação em Tecnologia da Informação e decidi, há 6 meses, dedicar 100% do meu tempo a me tornar desenvolvedor front-end. Não foi um desvio de caminho — foi uma escolha intencional depois de entender onde minha energia realmente flui.
+              </p>
+              <p>
+                Desde então, construí uma base sólida em HTML, CSS e estou evoluindo em JavaScript. Cada projeto é tratado como produto real: penso em responsividade, acessibilidade, performance e na experiência de quem vai usar.
+              </p>
+              <p>
+                O que me diferencia não é só o código — é a forma como enxergo o problema antes de escrever a primeira linha.
+              </p>
+            </div>
+
+            <div class="sobre__highlights">
+              <div class="sobre__highlight">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M10 1l2.39 7.26H20l-6.18 4.49 2.36 7.25L10 15.51l-6.18 4.49 2.36-7.25L0 8.26h7.61L10 1z" fill="var(--color-accent)"/>
+                </svg>
+                <span>Aprendizado rápido e consistente</span>
+              </div>
+              <div class="sobre__highlight">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M10 1l2.39 7.26H20l-6.18 4.49 2.36 7.25L10 15.51l-6.18 4.49 2.36-7.25L0 8.26h7.61L10 1z" fill="var(--color-accent)"/>
+                </svg>
+                <span>Foco em produto, não só em código</span>
+              </div>
+              <div class="sobre__highlight">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M10 1l2.39 7.26H20l-6.18 4.49 2.36 7.25L10 15.51l-6.18 4.49 2.36-7.25L0 8.26h7.61L10 1z" fill="var(--color-accent)"/>
+                </svg>
+                <span>Base sólida para crescer rápido em time</span>
+              </div>
+            </div>
+
+            <a href="#contato" class="btn btn--primary btn--sm">Vamos conversar</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         HABILIDADES
+         Cards animados com nível visual.
+    ========================================== -->
+    <section class="habilidades" id="habilidades" aria-label="Habilidades">
+      <div class="container">
+        <div class="section-header fade-up">
+          <p class="section-eyebrow">O que eu domino</p>
+          <h2 class="section-title">Habilidades & Ferramentas</h2>
+          <p class="section-subtitle">Cada tecnologia abaixo foi aplicada em projetos reais. Nada de lista por lista.</p>
+        </div>
+
+        <div class="skills__grid">
+
+          <!-- Card de habilidade principal -->
+          <article class="skill-card fade-up" style="--delay: 0.1s">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 3l18 0 -1.5 16.5L12 21l-7.5-1.5L3 3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M8 8h8M8.5 12h7l-.5 4.5L12 17.5l-3-.5-.2-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__name">HTML5</h3>
+            <p class="skill-card__desc">Semântico, acessível, bem estruturado. Sei a diferença entre código que funciona e código que comunica.</p>
+            <div class="skill-card__level" aria-label="Nível: Avançado">
+              <div class="skill-bar" style="--level: 85%"></div>
+              <span>Avançado</span>
+            </div>
+          </article>
+
+          <article class="skill-card fade-up" style="--delay: 0.2s">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 3l18 0 -1.5 16.5L12 21l-7.5-1.5L3 3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M8.5 8h7l-.3 3H9.5m-.5 3h5.5l-.3 3L12 17.5l-3-.5-.2-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__name">CSS3</h3>
+            <p class="skill-card__desc">Grid, Flexbox, animações, variáveis e responsividade são minha linguagem nativa de design.</p>
+            <div class="skill-card__level" aria-label="Nível: Avançado">
+              <div class="skill-bar" style="--level: 82%"></div>
+              <span>Avançado</span>
+            </div>
+          </article>
+
+          <article class="skill-card fade-up" style="--delay: 0.3s">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M8 17V11m5 6l-3-3 3-3m4 0v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__name">JavaScript</h3>
+            <p class="skill-card__desc">Lógica, DOM, eventos, funções e boas práticas. Evoluindo consistentemente a cada projeto.</p>
+            <div class="skill-card__level" aria-label="Nível: Intermediário">
+              <div class="skill-bar" style="--level: 60%"></div>
+              <span>Intermediário</span>
+            </div>
+          </article>
+
+          <article class="skill-card fade-up" style="--delay: 0.4s">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M12 3c2.5 0 4.5 4 4.5 9s-2 9-4.5 9-4.5-4-4.5-9 2-9 4.5-9z" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M3 12h18" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__name">Responsividade</h3>
+            <p class="skill-card__desc">Mobile-first é ponto de partida, não afterthought. Sites que funcionam em qualquer tela.</p>
+            <div class="skill-card__level" aria-label="Nível: Avançado">
+              <div class="skill-bar" style="--level: 88%"></div>
+              <span>Avançado</span>
+            </div>
+          </article>
+
+          <article class="skill-card fade-up" style="--delay: 0.5s">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="6" cy="18" r="2" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="18" cy="6" r="2" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="6" cy="6" r="2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M6 8v8M8 6h8M8 18h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__name">Git & GitHub</h3>
+            <p class="skill-card__desc">Controle de versão no dia a dia: commits claros, branches e colaboração em projetos abertos.</p>
+            <div class="skill-card__level" aria-label="Nível: Intermediário">
+              <div class="skill-bar" style="--level: 65%"></div>
+              <span>Intermediário</span>
+            </div>
+          </article>
+
+          <article class="skill-card fade-up" style="--delay: 0.6s">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M8 4v16M2 9h20" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__name">UI/UX Básico</h3>
+            <p class="skill-card__desc">Hierarquia visual, espaçamento, contraste e fluxo do usuário. Design com intenção.</p>
+            <div class="skill-card__level" aria-label="Nível: Básico-Intermediário">
+              <div class="skill-bar" style="--level: 55%"></div>
+              <span>Em evolução</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PROJETOS
+         3 projetos com destaque visual.
+    ========================================== -->
+    <section class="projetos" id="projetos" aria-label="Projetos">
+      <div class="container">
+        <div class="section-header fade-up">
+          <p class="section-eyebrow">O que eu construí</p>
+          <h2 class="section-title">Projetos Recentes</h2>
+          <p class="section-subtitle">Cada projeto foi construído do zero. Nada de templates copiados.</p>
+        </div>
+
+        <div class="projects__grid">
+
+          <!-- Projeto 1 — Destaque -->
+          <article class="project-card project-card--featured fade-up">
+            <div class="project-card__image">
+              <div class="project-card__placeholder" aria-hidden="true" data-num="01">
+                <div class="project-card__mockup">
+                  <div class="mockup-bar"></div>
+                  <div class="mockup-content">
+                    <div class="mockup-hero"></div>
+                    <div class="mockup-grid">
+                      <div></div><div></div><div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__overlay">
+                <div class="project-card__links">
+                  <a href="#" class="project-link" aria-label="Ver projeto ao vivo" target="_blank" rel="noopener noreferrer">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                      <path d="M9 2H16V9M10 8L16 2M7 4H3a1 1 0 00-1 1v10a1 1 0 001 1h10a1 1 0 001-1v-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    Live demo
+                  </a>
+                  <a href="#" class="project-link" aria-label="Ver código no GitHub" target="_blank" rel="noopener noreferrer">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                      <path d="M9 1C4.58 1 1 4.58 1 9c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38l-.01-1.49c-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48l-.01 2.2c0 .21.15.46.55.38A8.012 8.012 0 0017 9c0-4.42-3.58-8-8-8z" fill="currentColor"/>
+                    </svg>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-tag">Landing Page</span>
+                <span class="project-number">01</span>
+              </div>
+              <h3 class="project-card__title">SaaS Landing Page</h3>
+              <p class="project-card__desc">Landing page completa para produto SaaS com hero animado, seção de features, pricing e formulário de captura. Foco em conversão e performance.</p>
+              <div class="project-card__tech">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projeto 2 -->
+          <article class="project-card fade-up" style="--delay: 0.15s">
+            <div class="project-card__image">
+              <div class="project-card__placeholder project-card__placeholder--2" aria-hidden="true" data-num="02">
+                <div class="project-card__mockup">
+                  <div class="mockup-bar"></div>
+                  <div class="mockup-content">
+                    <div class="mockup-sidebar">
+                      <div></div><div></div><div></div><div></div>
+                    </div>
+                    <div class="mockup-main"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__overlay">
+                <div class="project-card__links">
+                  <a href="#" class="project-link" aria-label="Ver projeto ao vivo" target="_blank" rel="noopener noreferrer">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                      <path d="M9 2H16V9M10 8L16 2M7 4H3a1 1 0 00-1 1v10a1 1 0 001 1h10a1 1 0 001-1v-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    Live demo
+                  </a>
+                  <a href="#" class="project-link" aria-label="Ver código no GitHub" target="_blank" rel="noopener noreferrer">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                      <path d="M9 1C4.58 1 1 4.58 1 9c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38l-.01-1.49c-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48l-.01 2.2c0 .21.15.46.55.38A8.012 8.012 0 0017 9c0-4.42-3.58-8-8-8z" fill="currentColor"/>
+                    </svg>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-tag project-tag--blue">Dashboard UI</span>
+                <span class="project-number">02</span>
+              </div>
+              <h3 class="project-card__title">Dashboard Admin</h3>
+              <p class="project-card__desc">Interface de painel administrativo com sidebar, cards de métricas, tabela de dados e modo responsivo para mobile.</p>
+              <div class="project-card__tech">
+                <span>HTML5</span>
+                <span>CSS Grid</span>
+                <span>JS DOM</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projeto 3 -->
+          <article class="project-card fade-up" style="--delay: 0.3s">
+            <div class="project-card__image">
+              <div class="project-card__placeholder project-card__placeholder--3" aria-hidden="true" data-num="03">
+                <div class="project-card__mockup">
+                  <div class="mockup-bar"></div>
+                  <div class="mockup-content">
+                    <div class="mockup-cards">
+                      <div class="mockup-card-item"></div>
+                      <div class="mockup-card-item"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__overlay">
+                <div class="project-card__links">
+                  <a href="#" class="project-link" aria-label="Ver projeto ao vivo" target="_blank" rel="noopener noreferrer">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                      <path d="M9 2H16V9M10 8L16 2M7 4H3a1 1 0 00-1 1v10a1 1 0 001 1h10a1 1 0 001-1v-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    Live demo
+                  </a>
+                  <a href="#" class="project-link" aria-label="Ver código no GitHub" target="_blank" rel="noopener noreferrer">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                      <path d="M9 1C4.58 1 1 4.58 1 9c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38l-.01-1.49c-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48l-.01 2.2c0 .21.15.46.55.38A8.012 8.012 0 0017 9c0-4.42-3.58-8-8-8z" fill="currentColor"/>
+                    </svg>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-tag project-tag--purple">E-commerce UI</span>
+                <span class="project-number">03</span>
+              </div>
+              <h3 class="project-card__title">Loja Virtual</h3>
+              <p class="project-card__desc">Interface de loja com grid de produtos, filtro por categoria, carrinho funcional e checkout simplificado. CSS puro, sem frameworks.</p>
+              <div class="project-card__tech">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>Vanilla JS</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- CTA para GitHub -->
+        <div class="projects__cta fade-up">
+          <p>Quer ver mais? Todos os projetos estão no meu GitHub.</p>
+          <a href="https://github.com/" class="btn btn--outline" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <path d="M9 1C4.58 1 1 4.58 1 9c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38l-.01-1.49c-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48l-.01 2.2c0 .21.15.46.55.38A8.012 8.012 0 0017 9c0-4.42-3.58-8-8-8z" fill="currentColor"/>
+            </svg>
+            Ver GitHub completo
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CONTATO
+         Formulário + links diretos para redes.
+    ========================================== -->
+    <section class="contato" id="contato" aria-label="Contato">
+      <div class="container">
+        <div class="contato__grid">
+
+          <!-- Texto esquerda -->
+          <div class="contato__intro fade-left">
+            <p class="section-eyebrow">Vamos trabalhar juntos</p>
+            <h2 class="section-title">Pronto para<br />começar?</h2>
+            <p class="contato__desc">Estou aberto para oportunidades de emprego como desenvolvedor front-end júnior, estágios e projetos freelance. Se você tem uma vaga ou projeto, manda mensagem.</p>
+
+            <div class="contato__social">
+              <a href="https://github.com/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Kauan Lucas">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+                  <path d="M11 1C5.477 1 1 5.477 1 11c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0111 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C18.138 19.163 21 15.418 21 11c0-5.523-4.477-10-10-10z" fill="currentColor"/>
+                </svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://linkedin.com/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Kauan Lucas">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+                  <rect x="2" y="2" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M7 9.5V15M7 7v.5M11 15v-3a2 2 0 014 0v3M11 9.5V15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Formulário direita -->
+          <div class="contato__form-wrapper fade-right">
+            <form class="contato__form" id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="nome" class="form-label">Nome</label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  class="form-input"
+                  placeholder="Seu nome completo"
+                  autocomplete="name"
+                  required
+                />
+                <span class="form-error" id="nomeError" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">E-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="seu@email.com"
+                  autocomplete="email"
+                  required
+                />
+                <span class="form-error" id="emailError" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="assunto" class="form-label">Assunto</label>
+                <select id="assunto" name="assunto" class="form-input form-select" required>
+                  <option value="">Selecione um assunto</option>
+                  <option value="vaga">Oportunidade de emprego</option>
+                  <option value="estagio">Estágio</option>
+                  <option value="freelance">Projeto freelance</option>
+                  <option value="outro">Outro</option>
+                </select>
+                <span class="form-error" id="assuntoError" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea
+                  id="mensagem"
+                  name="mensagem"
+                  class="form-input form-textarea"
+                  placeholder="Conte um pouco mais sobre a oportunidade..."
+                  rows="5"
+                  required
+                ></textarea>
+                <span class="form-error" id="mensagemError" role="alert"></span>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+                <span class="btn__text">Enviar mensagem</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M1 8h14M9 2l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+
+              <!-- Feedback de envio -->
+              <div class="form-success" id="formSuccess" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       Simples, elegante, funcional.
+  ========================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <a href="#home" class="footer__logo" aria-label="Voltar ao topo">
+        KL<span class="nav__logo-dot">.</span>
+      </a>
+      <p class="footer__copy">
+        &copy; <span id="currentYear"></span> Kauan Lucas. Feito com HTML, CSS e JS puro.
+      </p>
+      <div class="footer__links">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão voltar ao topo -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo da página">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+      <path d="M10 15V5M5 10l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
