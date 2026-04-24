@@ -39,6 +39,17 @@
         <li><a href="#habilidades" class="nav__link">Habilidades</a></li>
         <li><a href="#projetos" class="nav__link">Projetos</a></li>
         <li><a href="#contato" class="nav__link">Contato</a></li>
+        <li class="nav__social-sep" aria-hidden="true"></li>
+        <li>
+          <a href="https://github.com/Kauanavs" class="nav__social-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 1C4.477 1 0 5.477 0 11c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0110 5.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.138 18.163 20 14.418 20 10c0-4.97-4.03-9-9-9z" fill="currentColor"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/kauanlas/" class="nav__social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M6 8.5V14M6 6v.5M10 14v-3a2 2 0 014 0v3M10 8.5V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+        </li>
       </ul>
 
       <!-- Botão menu mobile -->
@@ -64,8 +75,9 @@
       <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
 
       <div class="container hero__content">
-        <div class="hero__eyebrow fade-up">
-          Olá, eu sou
+        <div class="hero__badge fade-up">
+          <span class="hero__badge-dot"></span>
+          Disponível para oportunidades
         </div>
 
         <h1 class="hero__name fade-up">
@@ -136,8 +148,8 @@
                 <div class="sobre__avatar-ring"></div>
               </div>
               <div class="sobre__info-tags">
-                <span class="tag">Jau, SP</span>
-                <span class="tag">Formado em TI</span>
+                <span class="tag">Limeira, SP</span>
+                <span class="tag">TI Formation</span>
                 <span class="tag tag--green">Aberto para trabalhar</span>
               </div>
             </div>
@@ -163,13 +175,16 @@
 
             <div class="sobre__paragraphs">
               <p>
-                Tenho formação em Tecnologia da Informação e decidi, há 6 meses, dedicar 100% do meu tempo a me tornar desenvolvedor front-end. Não foi um desvio de caminho — foi uma escolha intencional depois de entender onde minha energia realmente flui.
+                Sou formado em Tecnologia da Informação e escolhi direcionar minha carreira para o desenvolvimento front-end de forma intencional. Há cerca de 6 meses, venho dedicando meu foco total a evoluir nessa área, transformando estudo em prática diária.
               </p>
               <p>
-                Desde então, construí uma base sólida em HTML, CSS e estou evoluindo em JavaScript. Cada projeto é tratado como produto real: penso em responsividade, acessibilidade, performance e na experiência de quem vai usar.
+                Construí uma base sólida em HTML, CSS e estou avançando em JavaScript, sempre aplicando meus conhecimentos em projetos reais. Mais do que código, busco criar interfaces modernas, responsivas e funcionais, com atenção à experiência do usuário, performance e boas práticas.
               </p>
               <p>
-                O que me diferencia não é só o código — é a forma como enxergo o problema antes de escrever a primeira linha.
+                Acredito que um bom desenvolvedor não começa pelo código, mas pela compreensão do problema. É isso que guia meu processo: entender antes de construir, pensar antes de executar e evoluir a cada projeto.
+              </p>
+              <p>
+                Hoje, estou em busca da minha primeira oportunidade na área, pronto para aprender, contribuir e crescer junto com o time. 
               </p>
             </div>
 
@@ -325,36 +340,16 @@
           <p class="section-subtitle">Cada projeto foi construído do zero. Nada de templates copiados.</p>
         </div>
 
-        <div class="projects__grid">
+        <div class="projects__grid projects__grid--4col">
 
-          <!-- Projeto 1 — Destaque -->
+          <!-- Projeto 1 — Save Studios -->
           <article class="project-card project-card--featured fade-up">
             <div class="project-card__image">
-              <div class="project-card__placeholder" aria-hidden="true" data-num="01">
-                <div class="project-card__mockup">
-                  <div class="mockup-bar"></div>
-                  <div class="mockup-content">
-                    <div class="mockup-hero"></div>
-                    <div class="mockup-grid">
-                      <div></div><div></div><div></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <img src="assets/images/save-studios.png" alt="Preview do projeto Save Studios" class="project-card__img" loading="lazy" />
               <div class="project-card__overlay">
                 <div class="project-card__links">
-                  <a href="#" class="project-link" aria-label="Ver projeto ao vivo" target="_blank" rel="noopener noreferrer">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
-                      <path d="M9 2H16V9M10 8L16 2M7 4H3a1 1 0 00-1 1v10a1 1 0 001 1h10a1 1 0 001-1v-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                    Live demo
-                  </a>
-                  <a href="#" class="project-link" aria-label="Ver código no GitHub" target="_blank" rel="noopener noreferrer">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
-                      <path d="M9 1C4.58 1 1 4.58 1 9c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38l-.01-1.49c-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48l-.01 2.2c0 .21.15.46.55.38A8.012 8.012 0 0017 9c0-4.42-3.58-8-8-8z" fill="currentColor"/>
-                    </svg>
-                    GitHub
-                  </a>
+                  <a href="https://kauanavs.github.io/Save-Studios/" class="project-link" target="_blank" rel="noopener noreferrer">🔗 Ver ao vivo</a>
+                  <a href="https://github.com/Kauanavs/Save-Studios" class="project-link" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
               </div>
             </div>
@@ -363,104 +358,82 @@
                 <span class="project-tag">Landing Page</span>
                 <span class="project-number">01</span>
               </div>
-              <h3 class="project-card__title">SaaS Landing Page</h3>
-              <p class="project-card__desc">Landing page completa para produto SaaS com hero animado, seção de features, pricing e formulário de captura. Foco em conversão e performance.</p>
+              <h3 class="project-card__title">Save Studios</h3>
+              <p class="project-card__desc">Landing page premium para estúdio criativo. Hero com animações, seção de serviços e formulário de contato com redirecionamento para WhatsApp. Foco em conversão e performance visual.</p>
               <div class="project-card__tech">
-                <span>HTML5</span>
-                <span>CSS3</span>
-                <span>JavaScript</span>
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
               </div>
             </div>
           </article>
 
-          <!-- Projeto 2 -->
-          <article class="project-card fade-up" style="--delay: 0.15s">
+          <!-- Projeto 2 — Creative Landing Page -->
+          <article class="project-card fade-up" style="--delay: 0.1s">
             <div class="project-card__image">
-              <div class="project-card__placeholder project-card__placeholder--2" aria-hidden="true" data-num="02">
-                <div class="project-card__mockup">
-                  <div class="mockup-bar"></div>
-                  <div class="mockup-content">
-                    <div class="mockup-sidebar">
-                      <div></div><div></div><div></div><div></div>
-                    </div>
-                    <div class="mockup-main"></div>
-                  </div>
-                </div>
-              </div>
+              <img src="assets/images/creative-landing.png" alt="Preview do projeto Creative Landing Page" class="project-card__img" loading="lazy" />
               <div class="project-card__overlay">
                 <div class="project-card__links">
-                  <a href="#" class="project-link" aria-label="Ver projeto ao vivo" target="_blank" rel="noopener noreferrer">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
-                      <path d="M9 2H16V9M10 8L16 2M7 4H3a1 1 0 00-1 1v10a1 1 0 001 1h10a1 1 0 001-1v-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                    Live demo
-                  </a>
-                  <a href="#" class="project-link" aria-label="Ver código no GitHub" target="_blank" rel="noopener noreferrer">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
-                      <path d="M9 1C4.58 1 1 4.58 1 9c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38l-.01-1.49c-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48l-.01 2.2c0 .21.15.46.55.38A8.012 8.012 0 0017 9c0-4.42-3.58-8-8-8z" fill="currentColor"/>
-                    </svg>
-                    GitHub
-                  </a>
+                  <a href="https://kauanavs.github.io/creative-landing-page/" class="project-link" target="_blank" rel="noopener noreferrer">🔗 Ver ao vivo</a>
+                  <a href="https://github.com/Kauanavs/creative-landing-page" class="project-link" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
               </div>
             </div>
             <div class="project-card__body">
               <div class="project-card__meta">
-                <span class="project-tag project-tag--blue">Dashboard UI</span>
+                <span class="project-tag project-tag--blue">Landing Page</span>
                 <span class="project-number">02</span>
               </div>
-              <h3 class="project-card__title">Dashboard Admin</h3>
-              <p class="project-card__desc">Interface de painel administrativo com sidebar, cards de métricas, tabela de dados e modo responsivo para mobile.</p>
+              <h3 class="project-card__title">Creative Landing Page</h3>
+              <p class="project-card__desc">Landing page criativa com design moderno, tipografia impactante e seções bem estruturadas. Layout responsivo construído do zero com CSS puro e animações suaves.</p>
               <div class="project-card__tech">
-                <span>HTML5</span>
-                <span>CSS Grid</span>
-                <span>JS DOM</span>
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
               </div>
             </div>
           </article>
 
-          <!-- Projeto 3 -->
-          <article class="project-card fade-up" style="--delay: 0.3s">
+          <!-- Projeto 3 — Dental Clinic -->
+          <article class="project-card fade-up" style="--delay: 0.2s">
             <div class="project-card__image">
-              <div class="project-card__placeholder project-card__placeholder--3" aria-hidden="true" data-num="03">
-                <div class="project-card__mockup">
-                  <div class="mockup-bar"></div>
-                  <div class="mockup-content">
-                    <div class="mockup-cards">
-                      <div class="mockup-card-item"></div>
-                      <div class="mockup-card-item"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <img src="assets/images/dental-clinic.png" alt="Preview do projeto Dental Clinic Landing Page" class="project-card__img" loading="lazy" />
               <div class="project-card__overlay">
                 <div class="project-card__links">
-                  <a href="#" class="project-link" aria-label="Ver projeto ao vivo" target="_blank" rel="noopener noreferrer">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
-                      <path d="M9 2H16V9M10 8L16 2M7 4H3a1 1 0 00-1 1v10a1 1 0 001 1h10a1 1 0 001-1v-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                    Live demo
-                  </a>
-                  <a href="#" class="project-link" aria-label="Ver código no GitHub" target="_blank" rel="noopener noreferrer">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
-                      <path d="M9 1C4.58 1 1 4.58 1 9c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38l-.01-1.49c-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48l-.01 2.2c0 .21.15.46.55.38A8.012 8.012 0 0017 9c0-4.42-3.58-8-8-8z" fill="currentColor"/>
-                    </svg>
-                    GitHub
-                  </a>
+                  <a href="https://kauanavs.github.io/dental-clinic-landing-page/" class="project-link" target="_blank" rel="noopener noreferrer">🔗 Ver ao vivo</a>
+                  <a href="https://github.com/Kauanavs/dental-clinic-landing-page" class="project-link" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
               </div>
             </div>
             <div class="project-card__body">
               <div class="project-card__meta">
-                <span class="project-tag project-tag--purple">E-commerce UI</span>
+                <span class="project-tag project-tag--purple">Landing Page</span>
                 <span class="project-number">03</span>
               </div>
-              <h3 class="project-card__title">Loja Virtual</h3>
-              <p class="project-card__desc">Interface de loja com grid de produtos, filtro por categoria, carrinho funcional e checkout simplificado. CSS puro, sem frameworks.</p>
+              <h3 class="project-card__title">Dental Clinic</h3>
+              <p class="project-card__desc">Landing page profissional para clínica odontológica. Design limpo e confiável, com seções de serviços, depoimentos e CTA de agendamento. Totalmente responsiva.</p>
               <div class="project-card__tech">
-                <span>HTML5</span>
-                <span>CSS3</span>
-                <span>Vanilla JS</span>
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projeto 4 — Modern Login UI -->
+          <article class="project-card fade-up" style="--delay: 0.3s">
+            <div class="project-card__image">
+              <img src="assets/images/modern-login.png" alt="Preview do projeto Modern Login UI" class="project-card__img" loading="lazy" />
+              <div class="project-card__overlay">
+                <div class="project-card__links">
+                  <a href="https://kauanavs.github.io/modern-login-ui/" class="project-link" target="_blank" rel="noopener noreferrer">🔗 Ver ao vivo</a>
+                  <a href="https://github.com/Kauanavs/modern-login-ui" class="project-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-tag project-tag--green">UI Component</span>
+                <span class="project-number">04</span>
+              </div>
+              <h3 class="project-card__title">Modern Login UI</h3>
+              <p class="project-card__desc">Tela de login moderna com design premium, efeito glassmorphism e microinterações. Formulário com validação visual e experiência de usuário refinada.</p>
+              <div class="project-card__tech">
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
               </div>
             </div>
           </article>
@@ -470,7 +443,7 @@
         <!-- CTA para GitHub -->
         <div class="projects__cta fade-up">
           <p>Quer ver mais? Todos os projetos estão no meu GitHub.</p>
-          <a href="https://github.com/" class="btn btn--outline" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Kauanavs" class="btn btn--outline" target="_blank" rel="noopener noreferrer">
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
               <path d="M9 1C4.58 1 1 4.58 1 9c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38l-.01-1.49c-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48l-.01 2.2c0 .21.15.46.55.38A8.012 8.012 0 0017 9c0-4.42-3.58-8-8-8z" fill="currentColor"/>
             </svg>
@@ -491,18 +464,24 @@
 
           <!-- Texto esquerda -->
           <div class="contato__intro fade-left">
-            <p class="section-eyebrow">Vamos trabalhar juntos</p>
-            <h2 class="section-title">Pronto para<br />começar?</h2>
-            <p class="contato__desc">Estou aberto para oportunidades de emprego como desenvolvedor front-end júnior, estágios e projetos freelance. Se você tem uma vaga ou projeto, manda mensagem.</p>
+            <h2 class="section-title">Vamos conversar?</h2>
+            <p class="contato__desc" style="margin-bottom: 2.5rem;">Tem uma ideia, projeto ou oportunidade? Me chama que a gente conversa.</p>
+
+            <div class="contato__cta-direct" style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 3rem;">
+              <a href="https://wa.me/5514991366745?text=Ol%C3%A1%20Kauan%2C%20vi%20seu%20portf%C3%B3lio%20e%20tenho%20interesse%20em%20conversar%20sobre%20uma%20oportunidade!" class="btn btn--whatsapp" target="_blank" rel="noopener noreferrer" style="justify-content: center;">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M11 1C5.477 1 1 5.477 1 11c0 1.89.525 3.66 1.438 5.168L1 21l4.942-1.418A9.96 9.96 0 0011 21c5.523 0 10-4.477 10-10S16.523 1 11 1zm5.162 14.162c-.22.616-1.28 1.176-1.752 1.22-.47.044-.908.22-3.06-.638-2.59-1.056-4.24-3.72-4.37-3.892-.13-.17-1.054-1.402-1.054-2.674 0-1.27.664-1.896.9-2.154.234-.26.51-.324.68-.324l.49.01c.157.006.37-.06.578.44.215.514.73 1.776.795 1.907.065.13.108.283.022.453-.086.17-.13.276-.26.424-.13.148-.272.33-.388.444-.13.13-.265.272-.114.533.15.26.668 1.102 1.433 1.786.984.878 1.815 1.15 2.076 1.28.26.13.41.108.562-.065.15-.174.646-.756.82-1.016.172-.26.344-.216.578-.13.234.087 1.49.703 1.748.83.26.13.43.194.494.3.065.108.065.634-.154 1.25z" fill="currentColor"/></svg>
+                Falar pelo WhatsApp
+              </a>
+            </div>
 
             <div class="contato__social">
-              <a href="https://github.com/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Kauan Lucas">
+              <a href="https://github.com/Kauanavs" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Kauan Lucas">
                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
                   <path d="M11 1C5.477 1 1 5.477 1 11c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0111 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C18.138 19.163 21 15.418 21 11c0-5.523-4.477-10-10-10z" fill="currentColor"/>
                 </svg>
                 <span>GitHub</span>
               </a>
-              <a href="https://linkedin.com/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Kauan Lucas">
+              <a href="https://www.linkedin.com/in/kauanlas/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Kauan Lucas">
                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
                   <rect x="2" y="2" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/>
                   <path d="M7 9.5V15M7 7v.5M11 15v-3a2 2 0 014 0v3M11 9.5V15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
@@ -514,69 +493,45 @@
 
           <!-- Formulário direita -->
           <div class="contato__form-wrapper fade-right">
-            <form class="contato__form" id="contactForm" novalidate>
+            <form class="contato__form" action="https://formspree.io/f/xeevnaqb" method="POST">
               <div class="form-group">
-                <label for="nome" class="form-label">Nome</label>
                 <input
                   type="text"
-                  id="nome"
-                  name="nome"
+                  name="name"
                   class="form-input"
-                  placeholder="Seu nome completo"
-                  autocomplete="name"
+                  placeholder="Seu nome"
                   required
                 />
-                <span class="form-error" id="nomeError" role="alert"></span>
               </div>
 
               <div class="form-group">
-                <label for="email" class="form-label">E-mail</label>
                 <input
                   type="email"
-                  id="email"
                   name="email"
                   class="form-input"
                   placeholder="seu@email.com"
-                  autocomplete="email"
                   required
                 />
-                <span class="form-error" id="emailError" role="alert"></span>
               </div>
 
               <div class="form-group">
-                <label for="assunto" class="form-label">Assunto</label>
-                <select id="assunto" name="assunto" class="form-input form-select" required>
-                  <option value="">Selecione um assunto</option>
-                  <option value="vaga">Oportunidade de emprego</option>
-                  <option value="estagio">Estágio</option>
-                  <option value="freelance">Projeto freelance</option>
-                  <option value="outro">Outro</option>
-                </select>
-                <span class="form-error" id="assuntoError" role="alert"></span>
-              </div>
-
-              <div class="form-group">
-                <label for="mensagem" class="form-label">Mensagem</label>
                 <textarea
-                  id="mensagem"
-                  name="mensagem"
+                  name="message"
                   class="form-input form-textarea"
-                  placeholder="Conte um pouco mais sobre a oportunidade..."
+                  placeholder="Me conta um pouco sobre o que você precisa..."
                   rows="5"
                   required
                 ></textarea>
-                <span class="form-error" id="mensagemError" role="alert"></span>
               </div>
 
-              <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+              <button type="submit" class="btn btn--primary btn--full" style="margin-top: 8px; justify-content: center;">
                 <span class="btn__text">Enviar mensagem</span>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                  <path d="M1 8h14M9 2l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M1 8h14M9 2l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </button>
 
-              <!-- Feedback de envio -->
-              <div class="form-success" id="formSuccess" role="alert" aria-live="polite"></div>
+              <p class="contato__note" style="text-align: center; margin-top: 1rem; color: var(--color-text-faint); font-size: var(--fs-sm);">
+                Respondo o mais rápido possível 🚀
+              </p>
             </form>
           </div>
 
@@ -596,11 +551,11 @@
         KL<span class="nav__logo-dot">.</span>
       </a>
       <p class="footer__copy">
-        &copy; <span id="currentYear"></span> Kauan Lucas. Feito com HTML, CSS e JS puro.
+        &copy; <span id="currentYear"></span> Desenvolvido com 💙 por Kauan Lucas — Desenvolvedor Front-end Júnior
       </p>
       <div class="footer__links">
-        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
-        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+        <a href="https://github.com/Kauanavs" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/kauanlas/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
       </div>
     </div>
   </footer>

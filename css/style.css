@@ -682,15 +682,16 @@ p { color: var(--color-text-muted); }
 
 /* Card flutuante de tech stack */
 .sobre__floating-card {
-  position: absolute;
-  bottom: -20px;
-  right: -20px;
+  position: relative;
+  bottom: auto;
+  right: auto;
   background: var(--color-bg-card-2);
   border: 1px solid var(--color-border-2);
   border-radius: var(--border-radius);
   padding: 16px 20px;
   min-width: 160px;
   box-shadow: var(--shadow-md);
+  margin-top: 16px;
 }
 
 .sobre__floating-label {
@@ -910,6 +911,24 @@ p { color: var(--color-text-muted); }
   overflow: hidden;
   min-height: 220px;
   background: var(--color-bg);
+}
+
+.project-card__img {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  transition: transform var(--transition-base);
+}
+
+.project-card--featured .project-card__img {
+  min-height: 280px;
+}
+
+.project-card:hover .project-card__img {
+  transform: scale(1.05);
 }
 
 .project-card__placeholder {
@@ -1510,4 +1529,134 @@ p { color: var(--color-text-muted); }
   .btn { width: 100%; justify-content: center; }
   .hero__stats { gap: var(--spacing-lg); }
   .hero__stat-divider { display: none; }
+}
+
+/* ============================================================
+   14. NOVOS ESTILOS — MELHORIAS v2
+============================================================ */
+
+/* Separador e ícones sociais no nav */
+.nav__social-sep {
+  width: 1px;
+  height: 20px;
+  background: var(--color-border-2);
+  margin: 0 4px;
+}
+
+.nav__social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  color: var(--color-text-muted);
+  transition: color var(--transition-fast), background var(--transition-fast);
+}
+
+.nav__social-icon:hover {
+  color: var(--color-accent);
+  background: rgba(79,142,247,0.08);
+}
+
+/* Botão WhatsApp */
+.btn--whatsapp {
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.25);
+}
+
+.btn--whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(37,211,102,0.4);
+}
+
+/* Social links extras */
+.social-link--whatsapp { color: #25d366 !important; }
+.social-link--email { color: var(--color-text-muted) !important; }
+
+/* Grid 4 colunas de projetos */
+.projects__grid--4col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.projects__grid--4col .project-card--featured {
+  grid-column: auto;
+  display: block;
+}
+
+/* Project tag verde */
+.project-tag--green {
+  background: rgba(52,211,153,0.12);
+  color: var(--color-success);
+  border-color: rgba(52,211,153,0.25);
+}
+
+/* CTA direto no formulário de contato */
+.contato__cta-direct {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.contato__note {
+  font-size: var(--fs-xs);
+  text-align: center;
+  color: var(--color-text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 4px;
+}
+
+/* Mockup login para projeto 4 */
+.mockup-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 12px;
+}
+
+.mockup-login-box {
+  width: 80%;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 8px;
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mockup-login-box div {
+  height: 8px;
+  border-radius: 4px;
+  background: rgba(79,142,247,0.2);
+}
+
+.mockup-login-box div:first-child { width: 60%; }
+.mockup-login-box div:nth-child(2) { width: 100%; }
+.mockup-login-box div:last-child {
+  width: 100%;
+  height: 28px;
+  background: rgba(79,142,247,0.35);
+  border-radius: 6px;
+  margin-top: 4px;
+}
+
+/* Placeholder 4 (login) */
+.project-card__placeholder--4 {
+  background: linear-gradient(135deg, #0d1120 0%, #111827 100%);
+}
+
+/* Responsivo: 4 projetos vira coluna única no mobile */
+@media (max-width: 767px) {
+  .projects__grid--4col {
+    grid-template-columns: 1fr;
+  }
+  .nav__social-sep,
+  .nav__social-icon { display: none; }
 }
